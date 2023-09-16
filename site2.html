@@ -1,0 +1,127 @@
+<DOCTYPE html>
+<html lang= "pt-BR">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name= "viewport" content="width=devide-width, initial-scale=1.0">
+    <meta name= "descripion" content="loja de ovos Premoli">
+    <title> ovos variados</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    
+<\head>
+
+<body>
+    <header class="cabecalho">
+        <h1>Meu Site</h1>
+        <button id="pesquisa">Abrir pesquisa</button>
+        <dialog id="minha-pesquisa">
+            <h2>opções:</h2>
+            <p>ovo de granja</p>
+            <p>ovo caipira</p>
+            <p>ovo orgânico </p>
+            <button id="fechar-pesquisa">Fechar</button>
+        </dialog>
+    
+        <script>
+            const botaoMinhaPesquisa = document.getElementById('pesquisa');
+            const botaoFecharPesquisa = document.getElementById('fechar-pesquisa');
+            const minhaPesquisa = document.getElementById('minha-pesquisa');
+    
+            botaoMinhaPesquisa.addEventListener('click', () => {
+                minhaPesquisa.showModal();
+            });
+    
+            botaoFecharPesquisa.addEventListener('click', () => {
+                minhaPesquisa.close();
+            });
+        </script>
+        <div class="header-content"></div>     
+
+        <img class="cabecalho-imagem"  src="https://nutrisoft.com.br/wp-content/uploads/2015/10/ovo-faz-mal-%C3%A0-sa%C3%BAde.jpg" alt="foto de um ovo " width="240" height="118" >
+        <h1 style="margin-bottom: 10px;"></h1>
+        <nav class="cabecalho-menu">  
+            <button id="mostrar-cardapio">Abrir cardapio</button>    
+
+            <a class="cabecalho-menu-item">tabela nutricional do ovo</a> 
+            <a class="cabecalho-menu-item">ovos caipiras</a>  
+            <a class="cabecalho-menu-item">ovos de granja</a>  
+            <dialog id="meu-cardapio">
+                <h2>cardapio</h2>
+                <p>Ovo de granja é chamado assim porque as aves são criadas em um modelo mais convencional</p>
+                <p>Ovo caipira possui cuidado com a alimentação do animal, que deve ser balanceada com rações que levam um grande leque de ingredientes</p>
+                <p>Ovo orgânico, próximo ao ovo caipira, apresenta cuidado com a alimentação do animal que, nesse caso, é orgânica</p>
+                <button id="fechar-cardapio">Fechar</button>
+            </dialog>
+        
+            <script>
+                const botaoMostrarCardapio = document.getElementById('mostrar-cardapio');
+                const botaoFecharCardapio = document.getElementById('fechar-cardapio');
+                const meuCardapio = document.getElementById('meu-cardapio');
+        
+                botaoMostrarCardapio.addEventListener('click', () => {
+                    meuCardapio.showModal();
+                });
+        
+                botaoFecharCardapio.addEventListener('click', () => {
+                    meuCardapio.close();
+                });
+            </script>
+
+            <button id="mostrar-tabela">Abrir tabela nutricional</button>   
+            <dialog id="tabela-nutricional">
+                <h2>tabela nutricional</h2>
+                <p>Ovos cozidos apresentam, em média,valor energético: 77 calorias; </p>
+                <p>carboidratos: 0,6 g;</p>   
+                <p>proteínas: 6,3 g;</p>    
+                <p>gorduras totais: 5,3 g;</p>   
+                <p>colesterol: 211 mg;</p>   
+                <p>dados do site mantiqueira Brasil</p>
+                <button id="fechar-tabela">Fechar</button>
+            </dialog>
+        
+            <script>
+                const botaoMostrarTabela = document.getElementById('mostrar-tabela');
+                const botaoFecharTabela = document.getElementById('fechar-tabela');
+                const tabelaNutricional = document.getElementById('tabela-nutricional');
+        
+                botaoMostrarTabela.addEventListener('click', () => {
+                    tabelaNutricional.showModal();
+                });
+        
+                botaoFecharTabela.addEventListener('click', () => {
+                    tabelaNutricional.close();
+                });
+            </script> 
+
+        </nav>
+    </header>
+
+    <main class="conteudo">
+        <section class="conteudo-secundario">
+            <div class="conteudo-principal-escrito">
+                <h1 class="conteudo-principal-escrito-titulo">Loja de ovos</h1>
+                <h2 class="conteudo-principal-escrito-subtitulo">nova forma de comprar ovos</h2>
+                <h2 class="conteudo-principal-escrito-subtitulo">sobre nós:</h2>
+                <p>somos grandes fãs de ovos e queremos facilitar a compra desse alimento que consideramos a fonte para a saúde</p>
+                <button class="conteudo-principal-escrito-botao">me adicione</button>
+            </div>
+                <img class="conteudo-principal-imagem"src="https://nutrisoft.com.br/wp-content/uploads/2015/10/ovo-faz-mal-%C3%A0-sa%C3%BAde.jpg" alt="foto de um ovo " width="567" height="361">
+        </section>
+       
+
+        <section>
+          <h3 class="conteudo-secundario-titulo">Por que consumir ovos?</h3>
+          <p class="conteudo-secundario-paragrafo">1.<strong>trás benefícios para a saúde</strong>, como, prevenção da diabetes e de doenças cardiovasculares</p>
+          <p class="conteudo-secundario-paragrafo">2.rico em proteínas, o ovo também ajuda na produção de músculos, favorecendo o ganho de<strong> massa muscular</strong></p>
+          <p class="conteudo-secundario-paragrafo">3.<strong>o ovo pode ser preparado de diversas formas</strong>,receitas como: bolos,omeletes e crepes </p>
+
+        </section>
+
+    </main>
+    <footer class="rodape">
+        <img class="rodape-imagem" scr="https://nutrisoft.com.br/wp-content/uploads/2015/10/ovo-faz-mal-%C3%A0-sa%C3%BAde.jpg">
+        <p>loja de ovos Premoli</p>
+    </footer>
+
+    </body>
+    </html>
